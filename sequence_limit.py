@@ -7,7 +7,7 @@ import numpy as np
 def get_figure(eps, N):
         
     visible = True
-    Nmax = 30
+    Nmax = 29
     
     # Create figure
     fig = go.Figure(layout_yaxis_range=[-.2,3],
