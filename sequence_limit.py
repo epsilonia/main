@@ -154,6 +154,7 @@ def get_figure(eps, N):
 
 
 st.markdown("<h1 style='text-align: center;'>Finite limit of a real sequence</h1>", unsafe_allow_html=True)
+st.markdown("""---""")
 st.markdown("<h3 style='text-align: left;'>Instructions</h3>", unsafe_allow_html=True)
 st.markdown("(1) Use the first slider to change the value of ε", unsafe_allow_html=True)
 st.markdown("(2) For each chosen value of ε, adjust N with the second slider to obtain a good value", unsafe_allow_html=True)
