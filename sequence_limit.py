@@ -158,6 +158,7 @@ st.markdown("<h3 style='text-align: left;'>Instructions</h3>", unsafe_allow_html
 st.markdown("(1) Use the first slider to change the value of ε", unsafe_allow_html=True)
 st.markdown("(2) For each chosen value of ε, adjust N with the second slider to obtain a good value", unsafe_allow_html=True)
 st.markdown("A good value of N is one such that all terms with indices greater than N are inside the strip of center 2 and radius ε", unsafe_allow_html=True)
+st.markdown("""---""")
 eps = st.slider("epsilon", min_value=0.01, max_value=1., value=.5, step=.01, disabled=False, label_visibility="visible")
 N = st.slider("N", min_value=1, max_value=30, value=5, step=1, disabled=False, label_visibility="visible")
 fig = get_figure(eps,N)
