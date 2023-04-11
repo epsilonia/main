@@ -136,7 +136,7 @@ def get_figure(eps, N):
             go.Scatter(
                 visible=True,
                 mode='markers',
-#                 marker= {'color':'rgba(255,0,0,255)','size':10},
+                marker= {'color':'rgba(255,0,0,255)','size':10},
                 x=xred,
                 y=2*(1-np.exp(-xred/5)),
                 hoverinfo = 'skip',
@@ -146,7 +146,7 @@ def get_figure(eps, N):
         )
         
         title = "This is NOT a good value for N. Points in red are outside the strip."
-#         title_color = 'rgba(255,0,0,255)'
+        title_color = 'rgba(255,0,0,255)'
 
     fig.update_layout(title = title,   title_font_color=title_color)
     
