@@ -2,3 +2,10 @@ streamlit
 plotly
 numpy
 streamlit_option_menu
+streamlit_agraph
+pickle
+importlib
+os
+sys
+webbrowser
+random
