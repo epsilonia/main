@@ -374,6 +374,7 @@ class MyLearnings:
 		self.dp = DataPort()
 
 	def get_mylearnings_file(self):
+		st.write(self.dp.users_path)
 		return os.path.join(self.dp.users_path, 'mylearnings')
 
 
@@ -384,7 +385,6 @@ class MyLearnings:
 
 	def load_mylearnings(self):
 		mylearnings_file = self.get_mylearnings_file()
-		st.write(mylearnings_file)
 		with open(mylearnings_file, 'rb') as inp:
 			mylearnings = pickle.load(inp)
 		return mylearnings
