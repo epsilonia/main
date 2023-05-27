@@ -19,6 +19,8 @@ def catalogue_page():
 
     st.subheader('Concepts')
     st.write("---")
+    st.write(dp.concepts_folder)
+
 
     with st.container():
         col1, col2, col3 = st.columns([1,20,1])
