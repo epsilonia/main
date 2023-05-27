@@ -55,8 +55,8 @@ class Concept:
 		if self.has_coding:
 			self.coding_path = os.path.join(self.dp.concepts_folder,self.name,'coding.xml') 
 		if self.has_interactive_interface:
-			self.interactive_interface_folder = os.path.join(self.dp.concepts_folder,self.name) 
-			self.interactive_interface_path = os.path.join(self.interactive_interface_folder,'interactive_interface') 
+			self.interactive_interface_path = os.path.join(self.dp.concepts_folder,self.name,'interactive_interface') 
+			# self.interactive_interface_path = os.path.join(self.interactive_interface_folder,'interactive_interface') 
 
 	def display_concept_preview(self):
 		with st.container():
