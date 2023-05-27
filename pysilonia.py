@@ -314,8 +314,11 @@ class DataPort:
 	def __init__(self):
 		# self.courses_folder = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\courses\\"
 		# self.concepts_folder = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\concepts\\"
-		self.courses_folder = ".\\courses\\"
-		self.concepts_folder = ".\\concepts\\"
+		main = os.path.dirname(os.path.abspath(__file__))
+		# self.courses_folder = ".\\courses\\"
+		# self.concepts_folder = ".\\concepts\\"
+		self.courses_folder = os.path.join(main,'courses')
+		self.concepts_folder = os.path.join(main,'concepts')
 		self.images_folder = "https://epsilonia.com/images/concept_images/"
 		self.videos_folder = "https://epsilonia.com/videos/"
 		self.concept_url = "https://epsilonia.com/wp/"
