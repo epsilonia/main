@@ -428,6 +428,8 @@ class MyLearnings:
 				course.name = course_title.lower().replace(' ','_')+'.mycourse'
 				course.description = course_description
 				course.concepts = selected_concepts
+				course.dp = DataPort()
+				course.mlo = MyLearnings()
 				course.save_course(mycourse=True)
 				self.add_to_mylearnings(course.name, 'course')
 
