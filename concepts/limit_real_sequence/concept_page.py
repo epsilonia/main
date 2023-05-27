@@ -1,6 +1,6 @@
-import sys
+import sys, os
 
-main_path = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\python\\github\\main"
+main_path =os.path.dirname(os.path.dirname(__file__))
 sys.path.insert(0, main_path)
 
 from pysilonia import *
