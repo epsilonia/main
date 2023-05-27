@@ -372,9 +372,9 @@ class MyLearnings:
 
 	def __init__(self):
 		self.dp = DataPort()
-		st.write(self.dp.users_path)
 
 	def get_mylearnings_file(self):
+		st.write(self.dp.users_path)
 		return os.path.join(self.dp.users_path, 'mylearnings')
 
 
