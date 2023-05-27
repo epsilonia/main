@@ -1,4 +1,4 @@
-import streamlit as st
+# import streamlit as st
 import sys
 main_path = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\python\\github\\main"
 sys.path.insert(0, main_path)
@@ -39,7 +39,7 @@ course.keywords = ['real numbers','real analysis']
 course.graph = get_graph()
 
 # course.display_preview()
-course.display_sidebar_menu()
+# course.display_sidebar_menu()
 
-# if __name__=='__main__':
-# 	course.save_course()
+if __name__=='__main__':
+	course.save_course()

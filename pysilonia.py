@@ -294,9 +294,10 @@ class Course:
 					st.write("* "+c.title)
 
 	def save_course(self,mycourse=False):
-		course_file = os.path.join(self.dp.courses_folder, self.name)
+		course_file = os.path.join(self.dp.courses_folder, self.name,'course_object')
 		if mycourse:
-			course_file = os.path.join(self.dp.users_path, self.name)
+			course_file = os.path.join(self.dp.users_path, 'courses',self.name)
+			st.write(course_file)
 		with open(course_file, 'wb') as outp:
 			pickle.dump(self, outp, pickle.HIGHEST_PROTOCOL)
 
@@ -349,7 +350,7 @@ class DataPort:
 
 	def get_coursefile(self,course_name):
 		if course_name.endswith('.mycourse'):
-			course_file = os.path.join(self.users_path, course_name,'course_object.mycourse')
+			course_file = os.path.join(self.users_path, 'courses',course_name)
 		else:
 			course_file = os.path.join(self.courses_folder, course_name,'course_object')
 		return course_file
@@ -407,7 +408,8 @@ class MyLearnings:
 			os.remove(course_file)
 
 	def initialize_mylearnings(self):
-		self.save_mylearnings([])
+		mylearnings = {'concepts':[],'courses':[]}
+		self.save_mylearnings(mylearnings)
 
 	def create_course(self, course_title, selected_concepts, course_description):
 		if course_title=='':

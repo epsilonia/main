@@ -8,6 +8,10 @@ def mylearnings_page():
 	do = DisplayObject()
 	mlo = MyLearnings()
 
+	mylearnings_file = mlo.get_mylearnings_file()
+	if not os.path.exists(mylearnings_file):
+		mlo.initialize_mylearnings()
+
 	do.display_title('My learnings')
 
 	mylearnings = mlo.load_mylearnings()
@@ -15,6 +19,7 @@ def mylearnings_page():
 	mylearnings_concepts = dp.load_concepts(mylearnings_concepts_names)
 
 	mylearnings_courses_names = mylearnings['courses']
+	# st.write(mylearnings_courses_names)
 	mylearnings_courses = dp.load_courses(mylearnings_courses_names)
 
 
