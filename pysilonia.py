@@ -383,6 +383,7 @@ class MyLearnings:
 
 	def load_mylearnings(self):
 		mylearnings_file = self.get_mylearnings_file()
+		st.write(mylearnings_file)
 		with open(mylearnings_file, 'rb') as inp:
 			mylearnings = pickle.load(inp)
 		return mylearnings
