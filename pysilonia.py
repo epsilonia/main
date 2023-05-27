@@ -37,8 +37,8 @@ class Concept:
 		
 	def automatic_fill(self):
 		self.do = DisplayObject()
-		self.dp = DataPort()
-		self.mlo = MyLearnings()
+		# self.dp = DataPort()
+		# self.mlo = MyLearnings()
 		self.url = self.dp.concept_url+f"{self.name}"
 		self.image =  self.dp.images_folder+f"{self.name}.png"
 		self.video = {
@@ -343,6 +343,8 @@ class DataPort:
 			concept_file = os.path.join(self.concepts_folder, concept_name, 'concept_object')
 			with open(concept_file, 'rb') as inp:
 				concept = pickle.load(inp)
+			concept.dp = DataPort()
+			concept.mlo = MyLearnings()
 			return concept
 
 	def load_concepts(self, concept_names):
