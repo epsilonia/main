@@ -322,7 +322,7 @@ class DataPort:
 		self.images_folder = "https://epsilonia.com/images/concept_images/"
 		self.videos_folder = "https://epsilonia.com/videos/"
 		self.concept_url = "https://epsilonia.com/wp/"
-		self.users_path = ".\\users"
+		self.users_path = os.path.join(main,'users')
 
 	def load_xml(self, xml_path):
 		tree = ET.parse(xml_path) 
