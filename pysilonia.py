@@ -324,6 +324,7 @@ class DataPort:
 		self.courses_folder = os.path.join(main,'courses')
 		self.concepts_folder = os.path.join(main,'concepts')
 		self.users_path = os.path.join(main,'users')
+		st.write(self.users_path)
 
 	def load_xml(self, xml_path):
 		tree = ET.parse(xml_path) 
