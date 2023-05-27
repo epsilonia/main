@@ -379,7 +379,7 @@ class MyLearnings:
 	def get_mylearnings_file(self):
 		return os.path.join(self.dp.users_path, 'mylearnings')
 
-
+ 
 	def save_mylearnings(self, mylearnings):
 		mylearnings_file = self.get_mylearnings_file()
 		with open(mylearnings_file, 'wb') as outp:
