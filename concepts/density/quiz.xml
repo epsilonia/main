@@ -1,0 +1,17 @@
+<quiz>
+	<question statement="Which property states that for any positive real numbers a and b, there exists a positive integer n such that na > b?">
+		<option text="Archimedean property" iscorrect="True" comment="**Correct**"></option>		
+		<option text="Triangle inequality" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="Fundamental theorem of algebra" iscorrect="False" comment="**Incorrect**"></option>		
+	</question>
+	<question statement="What is the solution to the equation |2x - 5| = 9?">
+		<option text="$x=7$ or $x=-2$" iscorrect="True" comment="**Correct**"></option>		
+		<option text="$x=7$ only" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="$x=-2$ only" iscorrect="False" comment="**Incorrect**"></option>		
+	</question>
+	<question statement="Which interval notation represents all real numbers greater than or equal to -3 but less than 4?">
+		<option text="$(-3,4)$" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="$(-\infty,-3] \cup [4, \infty)$" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="$[-3,4)$" iscorrect="True" comment="**Correct**"></option>		
+	</question>
+</quiz>

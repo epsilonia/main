@@ -1,0 +1,20 @@
+<coding>
+	<question>
+		<statement>
+		<![CDATA[
+		Write a function **archimedean(a,b)** in Python that takes two positive real numbers **a** and **b** (assume **a** &lt; **b**) and gives a natural number **n**  that satisfies the Archimedean property (i.e such that **n.a&gt;b**). Test the code with **a = 0.001** and **b = 50**]]>
+		</statement>
+		<solution>
+		<![CDATA[	
+			#The code   
+			def archimedean(a,b):   
+				n = int(b/a)+1   
+				return n   
+			# The test   
+			a = 0.001   
+			b = 50   
+			n = archimedean(a,b)   
+			print(n*a>b)]]>
+		</solution>
+	</question>
+</coding>

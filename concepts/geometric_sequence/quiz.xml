@@ -1,0 +1,12 @@
+<quiz>
+	<question statement="Question 1">
+		<option text="OptionA_1" iscorrect="True" comment="This is the correct answer" ></option>		
+		<option text="OptionB_1" iscorrect="False" comment="This is not the correct answer" ></option>		
+		<option text="OptionC_1" iscorrect="False" comment="This is not the correct answer" ></option>		
+	</question>
+	<question statement="Question 2">
+		<option text="OptionA_2" iscorrect="False" comment="This is the correct answer" ></option>		
+		<option text="OptionB_2" iscorrect="True" comment="This is not the correct answer" ></option>		
+		<option text="OptionC_2" iscorrect="False" comment="This is not the correct answer" ></option>		
+	</question>
+</quiz>

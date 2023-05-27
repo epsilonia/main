@@ -61,10 +61,11 @@ class Concept:
 		with st.container():
 			col1, col2 = st.columns([1,2])
 			with col1:
+				insert_space(height=3)
 				src = self.image
 				alt = self.name
 				href = self.url
-				html = f'<a href="{href}"><img src="{src}" alt="{alt}" width="200" height="170"></a>'
+				html = f'<a href="{href}"><img src="{src}" alt="{alt}" width="220" ></a>' #height="170"
 				st.write(html, unsafe_allow_html = True )
 			with col2:
 				st.markdown("<h4 style='color:#003F7A'>"+self.title+"</h4>", unsafe_allow_html=True)
@@ -273,7 +274,7 @@ class Course:
 				src = self.image
 				alt = self.name
 				href = 'https://epsilonia.com'
-				html = f'<a href="{href}"><img src="{src}" alt="{alt}" width="200" height="170"></a>'
+				html = f'<a href="{href}"><img src="{src}" alt="{alt}" width="200" ></a>' #height="170"
 				st.write(html, unsafe_allow_html = True )
 			with col2:
 				st.markdown("<h4 style='color:#003F7A'>"+self.title+"</h4>", unsafe_allow_html=True)
@@ -311,12 +312,14 @@ class Course:
 class DataPort:
 
 	def __init__(self):
-		self.courses_folder = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\courses\\"
-		self.concepts_folder = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\concepts\\"
+		# self.courses_folder = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\courses\\"
+		# self.concepts_folder = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\concepts\\"
+		self.courses_folder = ".\\courses\\"
+		self.concepts_folder = ".\\concepts\\"
 		self.images_folder = "https://epsilonia.com/images/concept_images/"
 		self.videos_folder = "https://epsilonia.com/videos/"
 		self.concept_url = "https://epsilonia.com/wp/"
-		self.users_path = "C:\\Users\\WALID\\OneDrive\\Desktop\\Private\\Epsilonia\\python\\github\\main\\users"
+		self.users_path = ".\\users"
 
 	def load_xml(self, xml_path):
 		tree = ET.parse(xml_path) 
@@ -478,7 +481,7 @@ class DisplayObject:
 	def	display_title(self, title):
 		st.markdown("<h1 style='text-align: center;'>"+title+"</h1>", unsafe_allow_html=True)
 
-	def display_question_xml(self, question,qi):
+	def display_question_xml(self, question, qi):
 
 		if f'checkbox{qi}' not in st.session_state:
 			st.session_state[f'checkbox{qi}'] = (0,0,0)
@@ -522,3 +525,7 @@ def new_video(title, url, description, duration):
 def new_link_to_exercise(label, url):
 	link = {'label':label, 'url':url}
 	return link
+
+def insert_space(height=70):
+    html = f'<img src="https://epsilonia.com/images/icons/space.png" height="{height}" width="20" alt="">'
+    st.write(html, unsafe_allow_html = True )

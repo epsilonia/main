@@ -29,7 +29,10 @@ def search_page():
         len_results_courses = len(research_result_courses)
 
         len_results = len_results_courses+len_results_concepts
-        st.subheader(f'{len_results} results found: {len_results_concepts} concept(s) & {len_results_courses} course(s)' )
+        s_concept = '' if len_results_concepts<=1 else 's'
+        s_course = '' if len_results_courses<=1 else 's'
+        found_string = f'{len_results} results found: {len_results_concepts} concept{s_concept} & {len_results_courses} course{s_course}' 
+        st.subheader(found_string)
         st.write('---')
         st.subheader(f'Concepts:' )
         do.display_list_of_concepts(research_result_concepts)

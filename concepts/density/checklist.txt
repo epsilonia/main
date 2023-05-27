@@ -1,0 +1,39 @@
+* Title
+* In short
+* Prerequisites: list of concepts that use this concept
+* Courses: list of courses this concept can be part of
+* Video 
+* A hands-on activity (Game / interactive interface / coding exercise)
+* A quiz
+* Exercises or links to exercises
+* Further concepts 
+* Parallel concepts 
+Making it a social experience
+
+* The video content (not necessarily in this order):
+	Two or three examples, an intuitive definition, or a real-world problem
+	Why is it important? What problem does it solve?
+	The formal definition 
+	A visual representation 
+	A plain language formulation
+	Something beautiful about it
+	Something to think about
+
+Create a plan for the content of the video
+Create a detailed plan for the video: a description of what each scene will contain
+Create mockups (slides with no animation and no details)
+Use mockups to:
+	* Create the script 
+	* Enrich the slides with handwritten text
+For each mathematical concept: 
+	* Make sure it is presented using the three learning channels
+	* Make sure an example is given
+	* Make sure the mathematical definition/result is explicited
+Improve the quality of the text using ChatGPT
+Mathematical rigorousness of the text and the slides and possible errors
+Check the consistency of the text with the slides
+What animations can be added to the slides to fill in the blanks and make them more attractive?
+Compatibility with American notations: points & commas, intervals, etc.
+
+Record the script
+Listen to the recorded audio while reading the script to make sure it's complete

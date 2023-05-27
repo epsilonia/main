@@ -1,10 +1,6 @@
 from pysilonia import *
 st.set_page_config(layout="wide")
 
-def insert_space():
-    html = f'<img src="https://epsilonia.com/images/icons/space.png" height="70" width="20" alt="">'
-    st.write(html, unsafe_allow_html = True )
-
 
 def update_i(delta):
     st.session_state.i = st.session_state.i+delta

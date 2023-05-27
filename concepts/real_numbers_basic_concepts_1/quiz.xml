@@ -1,0 +1,17 @@
+<quiz>
+	<question statement="Which of the following is a rational number?">
+		<option text="$\sqrt{2}$" iscorrect="False" comment="**Incorrect**: The irrationality of $\sqrt{2}\;$ has been proved in the video"></option>		
+		<option text="$\sqrt{3}$" iscorrect="False" comment="**Incorrect**: The proof of the irrationality of $\sqrt{3}\;$ is similar to the one for $\sqrt{2}$"></option>		
+		<option text="$\sqrt{4}$" iscorrect="True"  comment="**Correct** : $\sqrt{4}=2\;$ and $2\;$ is rational"></option>		
+	</question>
+	<question statement="What is the absolute value of $-7$?">
+		<option text="$7$" iscorrect="True" comment="**Correct**"> </option>		
+		<option text="$-7$" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="$0$" iscorrect="False" comment="**Incorrect**"></option>		
+	</question>
+	<question statement="What is the value of the expression $\sqrt{3} - \sqrt{12} + \sqrt{27} \; ?$">
+		<option text="$3\sqrt{3}$" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="$2\sqrt{3}$" iscorrect="True"  comment="**Correct**"></option>		
+		<option text="$-2\sqrt{3}$" iscorrect="False" comment="**Incorrect**"></option>		
+	</question>
+</quiz>
