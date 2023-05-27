@@ -34,7 +34,8 @@ class Concept:
 		self.has_exercises = False
 		self.has_coding = False
 		self.has_interactive_interface = False
-		
+
+
 	def automatic_fill(self):
 		self.do = DisplayObject()
 		self.dp = DataPort()
@@ -114,7 +115,8 @@ class Concept:
 			with st.expander('An interactive interface',expanded=expanded):
 				interactive_interface()
 
-	def display_quiz_xml(self, expanded=False):
+	def display_quiz_xml(self, expanded=True):
+		st.write(self.quiz_path)
 		if self.has_quiz:
 			quiz = self.dp.load_xml(self.quiz_path)
 			n = len(quiz)
