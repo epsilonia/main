@@ -37,8 +37,8 @@ class Concept:
 		
 	def automatic_fill(self):
 		self.do = DisplayObject()
-		# self.dp = DataPort()
-		# self.mlo = MyLearnings()
+		self.dp = DataPort()
+		self.mlo = MyLearnings()
 		self.url = self.dp.concept_url+f"{self.name}"
 		self.image =  self.dp.images_folder+f"{self.name}.png"
 		self.video = {
@@ -297,7 +297,6 @@ class Course:
 		course_file = os.path.join(self.dp.courses_folder, self.name,'course_object')
 		if mycourse:
 			course_file = os.path.join(self.dp.users_path, 'courses',self.name)
-			st.write(course_file)
 		with open(course_file, 'wb') as outp:
 			pickle.dump(self, outp, pickle.HIGHEST_PROTOCOL)
 

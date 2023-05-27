@@ -16,6 +16,7 @@ def define_concept():
 	concept.description = "Definition of the limit of a real sequence"
 	concept.short_definition = r'A real sequence is said to be convergent, or has a finite limit $\ell\;$ if it gets arbitrarily close to $\ell\;$'
 	concept.keywords = ['real numbers', 'definition', 'basic properties','archimedean property','absolute value','intervals']
+	concept.courses = ['real_numbers']
 	# concept.prerequisites = ['upper_bound_supremum_greatest_element']
 	# concept.further_concepts = ['subsequences']
 
