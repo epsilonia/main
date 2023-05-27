@@ -40,7 +40,7 @@ class Concept:
 		self.do = DisplayObject()
 		self.dp = DataPort()
 		self.mlo = MyLearnings()
-		self.url = self.dp.concept_url+f"{self.name}"
+		self.url = f"https://{self.name.replace('_','-')}.streamlit.app/"
 		self.image =  self.dp.images_folder+f"{self.name}.png"
 		self.video = {
 						'title':'',
@@ -319,7 +319,7 @@ class DataPort:
 		# self.concepts_folder = ".\\concepts\\"
 		self.images_folder = "https://epsilonia.com/images/concept_images/"
 		self.videos_folder = "https://epsilonia.com/videos/"
-		self.concept_url = "https://epsilonia.com/wp/"
+		# self.concept_url = "https://appname.streamlit.app/"
 		self.courses_folder = os.path.join(main,'courses')
 		self.concepts_folder = os.path.join(main,'concepts')
 		self.users_path = os.path.join(main,'users')
