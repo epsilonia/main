@@ -378,12 +378,12 @@ class MyLearnings:
 
 	def save_mylearnings(self, mylearnings):
 		mylearnings_file = self.get_mylearnings_file()
-		st.write(mylearnings_file)
 		with open(mylearnings_file, 'wb') as outp:
 			pickle.dump(mylearnings, outp, pickle.HIGHEST_PROTOCOL)
 
 	def load_mylearnings(self):
 		mylearnings_file = self.get_mylearnings_file()
+		st.write(mylearnings_file)
 		with open(mylearnings_file, 'rb') as inp:
 			mylearnings = pickle.load(inp)
 		return mylearnings
