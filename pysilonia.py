@@ -56,7 +56,6 @@ class Concept:
 			self.coding_path = os.path.join(self.dp.concepts_folder,self.name,'coding.xml') 
 		if self.has_interactive_interface:
 			self.interactive_interface_path = os.path.join(self.dp.concepts_folder,self.name,'interactive_interface') 
-			# self.interactive_interface_path = os.path.join(self.interactive_interface_folder,'interactive_interface') 
 
 	def display_concept_preview(self):
 		with st.container():
@@ -116,7 +115,6 @@ class Concept:
 				interactive_interface()
 
 	def display_quiz_xml(self, expanded=True):
-		st.write(self.quiz_path)
 		if self.has_quiz:
 			quiz = self.dp.load_xml(self.quiz_path)
 			n = len(quiz)
