@@ -375,8 +375,10 @@ class MyLearnings:
 	def get_mylearnings_file(self):
 		return os.path.join(self.users_path, 'mylearnings')
 
+
 	def save_mylearnings(self, mylearnings):
 		mylearnings_file = self.get_mylearnings_file()
+		st.write(mylearnings_file)
 		with open(mylearnings_file, 'wb') as outp:
 			pickle.dump(mylearnings, outp, pickle.HIGHEST_PROTOCOL)
 
