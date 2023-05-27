@@ -317,11 +317,11 @@ class DataPort:
 		main = os.path.dirname(os.path.abspath(__file__))
 		# self.courses_folder = ".\\courses\\"
 		# self.concepts_folder = ".\\concepts\\"
-		self.courses_folder = os.path.join(main,'courses')
-		self.concepts_folder = os.path.join(main,'concepts')
 		self.images_folder = "https://epsilonia.com/images/concept_images/"
 		self.videos_folder = "https://epsilonia.com/videos/"
 		self.concept_url = "https://epsilonia.com/wp/"
+		self.courses_folder = os.path.join(main,'courses')
+		self.concepts_folder = os.path.join(main,'concepts')
 		self.users_path = os.path.join(main,'users')
 
 	def load_xml(self, xml_path):
@@ -370,10 +370,9 @@ class MyLearnings:
 
 	def __init__(self):
 		self.dp = DataPort()
-		self.users_path = self.dp.users_path
 
 	def get_mylearnings_file(self):
-		return os.path.join(self.users_path, 'mylearnings')
+		return os.path.join(self.dp.users_path, 'mylearnings')
 
 
 	def save_mylearnings(self, mylearnings):
@@ -383,7 +382,6 @@ class MyLearnings:
 
 	def load_mylearnings(self):
 		mylearnings_file = self.get_mylearnings_file()
-		st.write(mylearnings_file)
 		with open(mylearnings_file, 'rb') as inp:
 			mylearnings = pickle.load(inp)
 		return mylearnings
