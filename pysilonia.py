@@ -225,9 +225,9 @@ class Course:
 		self.graph = None
 		self.keywords = None
 		self.image = 'https://epsilonia.com/images/concept_images/density.png'
-		self.dp = DataPort()
-		self.do = DisplayObject()
-		self.mlo = MyLearnings()
+		self.dp = None
+		self.do = None
+		self.mlo = None
 
 	def display_introduction(self):
 		col1, col2 = st.columns([1,2])
@@ -324,7 +324,6 @@ class DataPort:
 		self.courses_folder = os.path.join(main,'courses')
 		self.concepts_folder = os.path.join(main,'concepts')
 		self.users_path = os.path.join(main,'users')
-		st.write(self.users_path)
 
 	def load_xml(self, xml_path):
 		tree = ET.parse(xml_path) 
@@ -363,6 +362,8 @@ class DataPort:
 			course_file = self.get_coursefile(course_name)
 			with open(course_file, 'rb') as inp:
 				course = pickle.load(inp)
+			course.dp = DataPort()
+			course.mlo = MyLearnings()
 			return course
 
 	def load_courses(self, course_names):
@@ -374,7 +375,6 @@ class MyLearnings:
 
 	def __init__(self):
 		self.dp = DataPort()
-		st.write("Hello!")
 
 	def get_mylearnings_file(self):
 		return os.path.join(self.dp.users_path, 'mylearnings')
