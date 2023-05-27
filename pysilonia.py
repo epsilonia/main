@@ -341,8 +341,7 @@ class DataPort:
 			concept_file = os.path.join(self.concepts_folder, concept_name, 'concept_object')
 			with open(concept_file, 'rb') as inp:
 				concept = pickle.load(inp)
-			concept.dp = DataPort()
-			concept.mlo = MyLearnings()
+			concept.automatic_fill()
 			return concept
 
 	def load_concepts(self, concept_names):
