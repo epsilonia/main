@@ -330,7 +330,7 @@ class DataPort:
 		return root
 
 	def open_course(self, course_name):
-		course_python = os.path.join(self.courses_folder,course_name,'course_python.py')
+		course_python = os.path.join(self.courses_folder,course_name,'course_page.py')
 		os.system(f'streamlit run {course_python}')
 
 	def open_url(self,url):
