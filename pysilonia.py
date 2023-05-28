@@ -246,7 +246,7 @@ class Course:
 		menu_titles = [con.title for con in list_concepts]
 		return menu_titles
 
-	def display_sidebar_menu(self):
+	def display_course_page(self):
 		sidebar_menu_styles = { "container": {"padding": "0!important", "background-color": "#f0f2f6"}}
 		menu_titles = self.get_menu_titles()
 		with st.sidebar:
