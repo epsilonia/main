@@ -273,7 +273,7 @@ class Course:
 			with col1:
 				src = self.image
 				alt = self.name
-				href = 'https://epsilonia.com'
+				href = f"https://{self.name.replace('_','-')}.streamlit.app/"
 				html = f'<a href="{href}"><img src="{src}" alt="{alt}" width="200" ></a>' #height="170"
 				st.write(html, unsafe_allow_html = True )
 			with col2:
