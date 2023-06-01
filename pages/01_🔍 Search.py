@@ -11,7 +11,7 @@ def search_page():
     col1, col2, col3 = st.columns([1,6,1])
 
     with col2:
-        st.image("HighResolution.png")
+        st.image("https://epsilonia.com/files/high_resolution.png")
     
     keyword = st.text_input('What do you wanna learn today?','')
 
