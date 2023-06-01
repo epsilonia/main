@@ -73,5 +73,6 @@ def catalogue_page():
                     st.image(coursei0.image)
                     st.write(f'<p style="text-align:center; font-weight:bold"> {coursei0.title} </p>',unsafe_allow_html=True)
 
-if __name__=='__main__':
-    catalogue_page()
+# if __name__=='__main__':
+add_logo()
+catalogue_page()

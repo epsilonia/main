@@ -1,12 +1,17 @@
 <quiz>
-	<question statement="Question 1">
-		<option text="OptionA_1" iscorrect="True" comment="This is the correct answer" ></option>		
-		<option text="OptionB_1" iscorrect="False" comment="This is not the correct answer" ></option>		
-		<option text="OptionC_1" iscorrect="False" comment="This is not the correct answer" ></option>		
+	<question statement="Which of the following sequences is a geometric sequence?">
+		<option text="1, 3, 9, 27" iscorrect="True" comment="**Correct**"></option>		
+		<option text="2, 4, 8, 16" iscorrect="True" comment="**Correct**"></option>		
+		<option text="1, 4, 9, 16" iscorrect="False" comment="**Incorrect**"></option>		
 	</question>
-	<question statement="Question 2">
-		<option text="OptionA_2" iscorrect="False" comment="This is the correct answer" ></option>		
-		<option text="OptionB_2" iscorrect="True" comment="This is not the correct answer" ></option>		
-		<option text="OptionC_2" iscorrect="False" comment="This is not the correct answer" ></option>		
+	<question statement="What is the common ratio of the geometric sequence: 3, 6, 12, 24, ... ?">
+		<option text="2" iscorrect="True" comment="**Correct**"></option>		
+		<option text="3" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="4" iscorrect="False" comment="**Incorrect**"></option>		
+	</question>
+	<question statement="What is the limit of the geometric sequence: 1/2, 1/4, 1/8, 1/16, ... ?">
+		<option text="$0$" iscorrect="True" comment="**Correct**"></option>		
+		<option text="$1/2$" iscorrect="False" comment="**Incorrect**"></option>		
+		<option text="$1$" iscorrect="False" comment="**Incorrect**"></option>		
 	</question>
 </quiz>

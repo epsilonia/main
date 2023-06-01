@@ -538,3 +538,19 @@ def new_link_to_exercise(label, url):
 def insert_space(height=70):
     html = f'<img src="https://epsilonia.com/images/icons/space.png" height="{height}" width="20" alt="">'
     st.write(html, unsafe_allow_html = True )
+
+
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"] {
+                background-image: url(https://epsilonia.com/files/logo_white.svg);
+                background-repeat: no-repeat;
+                padding-top: 20px;
+                background-position: 20px 20px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )

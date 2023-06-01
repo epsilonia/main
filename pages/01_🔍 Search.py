@@ -40,5 +40,6 @@ def search_page():
         st.subheader(f'Courses:' )
         do.display_list_of_courses(research_result_courses)
 
-if __name__=='__main__':
-    search_page()
+# if __name__=='__main__':
+add_logo()
+search_page()

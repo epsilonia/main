@@ -70,4 +70,5 @@ def mylearnings_page():
 			mlo.create_course(course_title, selected_concepts, course_description)
 
 # if __name__=='__main__':
+add_logo()
 mylearnings_page()
