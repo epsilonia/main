@@ -195,7 +195,7 @@ class Concept:
 		self.display_short_definition()
 		self.display_prerequisites()
 		self.display_courses()
-		self.display_video(expanded=False)
+		self.display_video(expanded=True)
 		self.display_interactive_interface(expanded=True)
 		self.display_quiz_xml()
 		self.display_coding()
