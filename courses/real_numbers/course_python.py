@@ -29,8 +29,8 @@ def get_graph():
 course = Course()
 
 course.name = "real_numbers"
-course.title = "Real Numbers"
-course.url = f'https://{course.name}.streamlit.app'
+course.title = "Real Numbers" 
+course.url = 'https://real-numbers.streamlit.app'
 course.image = 'https://epsilonia.com/images/concept_images/density.png'
 course.description = r"This course is about real numbers. It defines the set $\mathbb{R}$ of real numbers and gives their fundamental properties"
 course.concepts = course_concept_names
