@@ -80,7 +80,6 @@ def catalogue_page():
                     href = coursei0.url
                     html = f'<a href="{href}"><img src="{src}" alt="{alt}" width="300" ></a>' #height="170"
                     st.write(html, unsafe_allow_html = True )
-
                     # st.image(coursei0.image)
                     st.write(f'<p style="text-align:center; font-weight:bold"> {coursei0.title} </p>',unsafe_allow_html=True)
 

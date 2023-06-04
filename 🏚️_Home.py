@@ -1,22 +1,6 @@
 from pysilonia import *
 st.set_page_config(layout="wide")
 
-
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"] {
-                background-image: url(https://epsilonia.com/files/logo_white.svg);
-                background-repeat: no-repeat;
-                padding-top: 20px;
-                background-position: 20px 20px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
 add_logo()
 st.write('<iframe src="https://epsilonia.com" title="description" height="4500" width="100%" ></iframe>',unsafe_allow_html=True)
 
