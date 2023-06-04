@@ -360,6 +360,7 @@ class DataPort:
 			course_file = self.get_coursefile(course_name)
 			with open(course_file, 'rb') as inp:
 				course = pickle.load(inp)
+			course.do = DisplayObject()
 			course.dp = DataPort()
 			course.mlo = MyLearnings()
 			return course
