@@ -251,7 +251,7 @@ class Course:
 		menu_titles = self.get_menu_titles()
 		with st.sidebar:
 			selected = option_menu("Course content", ['Course introduction']+menu_titles, 
-		        					icons=['house-door-fill']+['caret-right-square']*len(self.concepts), 
+		        					icons=['house-door']+['caret-right-square']*len(self.concepts), 
 		        					menu_icon="book",
 		        					styles=sidebar_menu_styles) #, default_index=0
 
