@@ -16,7 +16,7 @@ def search_page():
     keyword = st.text_input('What do you wanna learn today?','')
 
 
-    keyword = 'real numbers'
+    # keyword = 'real numbers'
     if keyword != '':
         concept_names = [c for c in os.listdir(dp.concepts_folder) if c!='_template']
         list_of_concepts = dp.load_concepts(concept_names)
