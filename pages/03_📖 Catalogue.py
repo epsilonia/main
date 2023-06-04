@@ -75,7 +75,13 @@ def catalogue_page():
                 i0 = (i+ik)%n
                 coursei0 = dp.load_course(courses_names[i0])
                 with cols[ik]:  
-                    st.image(coursei0.image)
+                    src = coursei0.image
+                    alt = coursei0.name
+                    href = coursei0.url
+                    html = f'<a href="{href}"><img src="{src}" alt="{alt}" width="300" ></a>' #height="170"
+                    st.write(html, unsafe_allow_html = True )
+
+                    # st.image(coursei0.image)
                     st.write(f'<p style="text-align:center; font-weight:bold"> {coursei0.title} </p>',unsafe_allow_html=True)
 
 # if __name__=='__main__':
