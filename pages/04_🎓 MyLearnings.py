@@ -54,7 +54,7 @@ def mylearnings_page():
 
 	if selected=='📘 My courses':
 		if len(mylearnings_courses)==0:
-			st.error('No courses to display here. If you add courses to MyLearnings. They will appear here.')
+			st.error('No courses to display here. If you add courses to MyLearnings or create a customized course, they will appear here.')
 		else:
 			do.display_list_of_courses(mylearnings_courses)
 
