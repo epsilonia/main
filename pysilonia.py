@@ -198,7 +198,7 @@ class Concept:
 		self.display_video(expanded=True)
 		self.display_interactive_interface(expanded=True)
 		self.display_quiz_xml()
-		st.write("We reached here")
+		st.write("We reached here!")
 		self.display_coding()
 		self.display_exercises()
 		# display_further_concepts(concept)
