@@ -128,20 +128,20 @@ class Concept:
 						self.do.display_question_xml(question,i)
 					
 	def display_coding(self,expanded=True):
-		# try:
-		coding = load_xml(self.coding_path) 
-		st.subheader(f":{subheader_color}[Coding exercice]")
-		with st.expander('Learn math by coding',expanded=expanded):
-			n = len(coding)
-			for i in range(n):
-				question = coding[i]
-				statement = question.find('statement').text
-				solution = question.find('solution').text
-				st.info(statement)
-				show_code = st.checkbox(key=i,label='**Show solution**')
-				if show_code:
-					st.code(solution,language="python")
-		# except: pass
+		try:
+			coding = load_xml(self.coding_path) 
+			st.subheader(f":{subheader_color}[Coding exercice]")
+			with st.expander('Learn math by coding',expanded=expanded):
+				n = len(coding)
+				for i in range(n):
+					question = coding[i]
+					statement = question.find('statement').text
+					solution = question.find('solution').text
+					st.info(statement)
+					show_code = st.checkbox(key=i,label='**Show solution**')
+					if show_code:
+						st.code(solution,language="python")
+		except: pass
 
 
 	def display_exercises(self, expanded=False):
@@ -198,7 +198,6 @@ class Concept:
 		self.display_video(expanded=True)
 		self.display_interactive_interface(expanded=True)
 		self.display_quiz_xml()
-		st.write("We reached here!")
 		self.display_coding()
 		self.display_exercises()
 		# display_further_concepts(concept)
