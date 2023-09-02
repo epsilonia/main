@@ -5,9 +5,9 @@
 		<option text="$\sqrt{p^2+3p+1}$" iscorrect="False"  comment="**Incorrect** : For p=1, this gives $\sqrt{5}\;$ which is not rational"></option>		
 	</question>
 	<question statement="What is not equal to the absolute value of $x$, for $x$ real?">
-		<option text="$max(x,-x)$" iscorrect="False" comment="**Incorrect: $max(x,-x)$ is equal to $|x|$**"> </option>		
-		<option text="$\sqrt(x^2)$" iscorrect="False" comment="**Incorrect: $\sqrt(x^2)$ is equal to $|x|$**"></option>		
-		<option text="$min(x,-x)$" iscorrect="True" comment="**Correct. For $x=-1$,$min(-1,1) \neq |-1|$"></option>		
+		<option text="$max(x,-x)$" iscorrect="False" comment="**Incorrect:** $max(x,-x)$ is equal to $|x|$"> </option>		
+		<option text="$\sqrt{x^2}$" iscorrect="False" comment="**Incorrect:** $\sqrt(x^2)$ is equal to $|x|$"></option>		
+		<option text="$min(x,-x)$" iscorrect="True" comment="**Correct:** For $x=-1$, $min(-1,1) \neq |-1|$"></option>		
 	</question>
 	<question statement="What is the value of the expression $\sqrt{3} - \sqrt{12} + \sqrt{27} \; ?$">
 		<option text="$3\sqrt{3}$" iscorrect="False" comment="**Incorrect**"></option>		
