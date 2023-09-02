@@ -1,13 +1,13 @@
 <quiz>
-	<question statement="Which of the following is a rational number?">
-		<option text="$\sqrt{2}$" iscorrect="False" comment="**Incorrect**: The irrationality of $\sqrt{2}\;$ has been proved in the video"></option>		
-		<option text="$\sqrt{3}$" iscorrect="False" comment="**Incorrect**: The proof of the irrationality of $\sqrt{3}\;$ is similar to the one for $\sqrt{2}$"></option>		
-		<option text="$\sqrt{4}$" iscorrect="True"  comment="**Correct** : $\sqrt{4}=2\;$ and $2\;$ is rational"></option>		
+	<question statement="If p is a rational number, which of the following is alway rational?">
+		<option text="$\sqrt{p^2+p+1}$" iscorrect="False" comment="**Incorrect**: For p=1, this gives $\sqrt{3}\;$ which is not rational"></option>	
+		<option text="$\sqrt{p^2+2p+1}$" iscorrect="True" comment="**Correct**: This gives p+1, which is rational"></option>		
+		<option text="$\sqrt{p^2+3p+1}$" iscorrect="False"  comment="**Incorrect** : For p=1, this gives $\sqrt{5}\;$ which is not rational"></option>		
 	</question>
-	<question statement="What is the absolute value of $-7$?">
-		<option text="$7$" iscorrect="True" comment="**Correct**"> </option>		
-		<option text="$-7$" iscorrect="False" comment="**Incorrect**"></option>		
-		<option text="$0$" iscorrect="False" comment="**Incorrect**"></option>		
+	<question statement="What is not equal to the absolute value of $x$, for $x$ real?">
+		<option text="$max(x,-x)$" iscorrect="False" comment="**Incorrect: $max(x,-x)$ is equal to $|x|$**"> </option>		
+		<option text="$\sqrt(x^2)$" iscorrect="False" comment="**Incorrect: $\sqrt(x^2)$ is equal to $|x|$**"></option>		
+		<option text="$min(x,-x)$" iscorrect="True" comment="**Correct. For $x=-1$,$min(-1,1) \neq |-1|$"></option>		
 	</question>
 	<question statement="What is the value of the expression $\sqrt{3} - \sqrt{12} + \sqrt{27} \; ?$">
 		<option text="$3\sqrt{3}$" iscorrect="False" comment="**Incorrect**"></option>		
