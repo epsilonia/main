@@ -149,7 +149,7 @@ def interactive_interface():
 			title = "This is NOT a good value for N. Points in red are outside the strip."
 			title_color = 'rgba(255,0,0,255)'
 
-		fig.update_layout(title=dict(text=title, font=dict(size=20)),  title_font_color=title_color)
+		fig.update_layout(title=dict(text=title, font=dict(size=22)),  title_font_color=title_color)
 		
 		return fig
 
