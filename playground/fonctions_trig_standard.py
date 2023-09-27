@@ -2,6 +2,8 @@
 import streamlit as st
 import plotly.graph_objects as go
 import numpy as np
+import pandas as pd
+import datetime
 
 st.set_page_config(layout="wide")
 
@@ -76,7 +78,18 @@ def get_figure(M,A,P,T):
     return fig
 
 
-st.markdown("<h1 style='text-align: center;'>Forme starndard d'une fonction trigonométrique</h1>", unsafe_allow_html=True)
+try:
+    stats = pd.read_csv('appstat.csv')
+except:
+    stats = pd.DataFrame(columns = ['time'])
+
+now = datetime.datetime.now()
+st.write(now)
+stats = stats.append({'time':now}, ignore_index=True)
+stats.to_csv('appstat.csv',index=False)
+
+
+st.markdown("<h1 style='text-align: center;'>Forme standard d'une fonction trigonométrique</h1>", unsafe_allow_html=True)
 st.markdown("""---""")
 st.markdown("<h3 style='text-align: left;'>Instructions</h3>", unsafe_allow_html=True)
 st.markdown(r'''La forme standard d'une fonction trigonométrique est $f(t)=M+A\sin \left(\dfrac{2\pi}{P}(t-T)\right)$''')
