@@ -78,15 +78,15 @@ def get_figure(M,A,P,T):
     return fig
 
 
-try:
-    stats = pd.read_csv('./appstat.csv',sep=',')
-except:
-    stats = pd.DataFrame(columns = ['time'])
+# try:
+#     stats = pd.read_csv('./appstat.csv',sep=',')
+# except:
+#     stats = pd.DataFrame(columns = ['time'])
 
-now = datetime.datetime.now()
-st.write(now)
-stats.loc[len(stats),'time']=now
-stats.to_csv('./appstat.csv',index=False,sep=',')
+# now = datetime.datetime.now()
+# st.write(now)
+# stats.loc[len(stats),'time']=now
+# stats.to_csv('./appstat.csv',index=False,sep=',')
 
 
 st.markdown("<h1 style='text-align: center;'>Forme standard d'une fonction trigonométrique</h1>", unsafe_allow_html=True)
