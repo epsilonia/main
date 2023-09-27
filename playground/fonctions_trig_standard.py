@@ -85,7 +85,7 @@ except:
 
 now = datetime.datetime.now()
 st.write(now)
-stats = stats.append({'time':now}, ignore_index=True)
+stats.loc[len(stats),'time']=now
 stats.to_csv('appstat.csv',index=False)
 
 
