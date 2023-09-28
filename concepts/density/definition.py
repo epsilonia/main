@@ -26,9 +26,9 @@ def define_concept():
 	concept.name = os.path.basename(os.path.dirname(__file__))
 
 	concept.has_coding = True
-	concept.has_exercices = True
-	# concept.has_interactive_interface = True
-	concept.has_quiz = True
+	concept.has_exercices = False
+	concept.has_interactive_interface = False
+	concept.has_quiz = False
 
 	concept.automatic_fill()
 

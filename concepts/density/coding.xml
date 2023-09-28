@@ -6,13 +6,13 @@
 		</statement>
 		<solution>
 		<![CDATA[	
-			#The code   
-			def archimedean(a,b):   
-				n = int(b/a)+1   
-				return n   
-			# The test   
-			a = 0.001   
-			b = 50   
+			#The code
+			def archimedean(a,b):
+				n = int(b/a)+1
+				return n
+			# The test
+			a = 0.001
+			b = 50
 			n = archimedean(a,b)   
 			print(n*a>b)]]>
 		</solution>

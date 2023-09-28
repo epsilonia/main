@@ -127,7 +127,8 @@ class Concept:
 						question = quiz[i]
 						self.do.display_question_xml(question,i)
 					
-	def display_coding(self,expanded=True):
+	def display_coding_exercise(self,expanded=True):
+		import random
 		if self.has_coding:
 			coding = self.dp.load_xml(self.coding_path) 
 			st.subheader(f":{subheader_color}[Coding exercice]")
@@ -198,7 +199,7 @@ class Concept:
 		self.display_video(expanded=True)
 		self.display_interactive_interface(expanded=True)
 		self.display_quiz_xml()
-		self.display_coding()
+		self.display_coding_exercise()
 		# self.display_exercises()
 		# display_further_concepts(concept)
 		# display_similar_concepts(concept)
