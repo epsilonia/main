@@ -199,7 +199,7 @@ class Concept:
 		self.display_interactive_interface(expanded=True)
 		self.display_quiz_xml()
 		self.display_coding()
-		self.display_exercises()
+		# self.display_exercises()
 		# display_further_concepts(concept)
 		# display_similar_concepts(concept)
 
