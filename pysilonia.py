@@ -130,7 +130,7 @@ class Concept:
 	def display_coding(self,expanded=True):
 		# try:
 		st.write(self.coding_path)
-		coding = self.dp.load_xml(self.coding_path) 
+		# coding = self.dp.load_xml(self.coding_path) 
 		st.subheader(f":{subheader_color}[Coding exercice]")
 		with st.expander('Learn math by coding',expanded=expanded):
 			n = len(coding)
