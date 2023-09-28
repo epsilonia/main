@@ -129,7 +129,7 @@ class Concept:
 					
 	def display_coding(self,expanded=True):
 		# try:
-		coding = load_xml(self.coding_path) 
+		coding = self.dp.load_xml(self.coding_path) 
 		st.subheader(f":{subheader_color}[Coding exercice]")
 		with st.expander('Learn math by coding',expanded=expanded):
 			n = len(coding)
@@ -146,7 +146,7 @@ class Concept:
 
 	def display_exercises(self, expanded=False):
 		if self.has_exercises:
-			exercises = load_xml(self.exercises_path)
+			exercises = self.dp.load_xml(self.exercises_path)
 
 			videos_from_xml = exercices.find('videos')
 			videos = []
