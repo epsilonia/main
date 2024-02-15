@@ -34,7 +34,7 @@ Improve the quality of the text using ChatGPT
 Mathematical rigorousness of the text and the slides and possible errors
 Check the consistency of the text with the slides
 What animations can be added to the slides to fill in the blanks and make them more attractive?
-Compatibility with american notations: points & commas, intervals, etc.
+Compatibility with American notations: points & commas, intervals, etc.
 
 Record the script
 Listen to the recorded audio while reading the script to make sure it's complete

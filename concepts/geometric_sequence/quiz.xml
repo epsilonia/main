@@ -1,8 +1,8 @@
 <quiz>
-	<question statement="Which of the following sequences is a geometric sequence?">
-		<option text="1, 3, 9, 27" iscorrect="True" comment="**Correct**"></option>		
-		<option text="2, 4, 8, 16" iscorrect="True" comment="**Correct**"></option>		
-		<option text="1, 4, 9, 16" iscorrect="False" comment="**Incorrect**"></option>		
+	<question statement="Which of the following sequences is not a geometric sequence?">
+		<option text="1, 3, 9, 27" iscorrect="True" comment="**Incorrect**"></option>		
+		<option text="2, 4, 8, 16" iscorrect="True" comment="**Incorrect**"></option>		
+		<option text="1, 4, 9, 16" iscorrect="False" comment="**Correct**"></option>		
 	</question>
 	<question statement="What is the common ratio of the geometric sequence: 3, 6, 12, 24, ... ?">
 		<option text="2" iscorrect="True" comment="**Correct**"></option>		
