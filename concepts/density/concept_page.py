@@ -1,6 +1,6 @@
 import sys, os
 
-main_path =os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+main_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 sys.path.insert(0, main_path)
 
 from pysilonia import *
